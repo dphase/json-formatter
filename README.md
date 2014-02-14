@@ -1,6 +1,8 @@
 JSON Formatter
 ==============
 
+![screenshot](https://raw.github.com/dphase/json-formatter/master/screenshot.png)
+
 Chrome extension for printing JSON and JSONP nicely when you visit it 'directly' in a browser tab.
 
 Features
