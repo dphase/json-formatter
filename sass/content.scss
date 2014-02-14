@@ -5,6 +5,7 @@ body {
   overflow-y: scroll !important ;
   margin: 0 ;
   position: relative ;
+  background-color: #212121;
 }
 
 #optionBar {
@@ -121,11 +122,11 @@ pre {
   left: -2px ;
   top: 1px ;
   z-index: 5 ;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD1JREFUeNpiYGBgOADE%2F3Hgw0DM4IRHgSsDFOzFInmMAQnY49ONzZRjDFiADT7dMLALiE8y4AGW6LoBAgwAuIkf%2F%2FB7O9sAAAAASUVORK5CYII%3D") ;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjJENUJFNzA4REJCMTFFM0E3ODlEQzI4MEEyREE0QzAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjJENUJFNkY4REJCMTFFM0E3ODlEQzI4MEEyREE0QzAiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuZGlkOjAyODAxMTc0MDcyMDY4MTE4QzE0QkVEMzY4MzMyRDc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAyODAxMTc0MDcyMDY4MTE4QzE0QkVEMzY4MzMyRDc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+mwKX7AAAAAlQTFRF5Ozytc7h////sXj2ygAAAAN0Uk5T//8A18oNQQAAACNJREFUeNpiYIICBjiDgRECGJggLJAUiAVRw8CIohjGAAgwAA6GAGkIGBccAAAAAElFTkSuQmCC);
   background-repeat: no-repeat ;
   background-position: center center; 
   display: block ;
-  opacity: 0.15 ;
+  opacity: 0.25 ;
   // -webkit-transition: -webkit-transform 0.05s linear ;
 
   .collapsed > & {
@@ -138,10 +139,10 @@ pre {
   }
 
   &:hover {
-    opacity: 0.35 ;
+    opacity: 0.55 ;
   }
   &:active {
-    opacity: 0.5 ;
+    opacity: 0.85 ;
   }
 
   /* .e that are *inside* the children of a collapsed one */
@@ -153,7 +154,7 @@ pre {
 .blockInner {
   display: block ;
   padding-left: 24px ;
-  border-left: 1px dotted #bbb ;
+  border-left: 1px dotted #373b3e;
   margin-left: 2px ; 
 }
 
@@ -161,34 +162,40 @@ pre {
 /* SYNTAX HIGHLIGHTING */
 
   #formattedJson, #jsonpOpener, #jsonpCloser {
-    color: #333 ;
-    font: 13px/18px monospace ;
+    color: #d3d0c8;
+    font: 13px/18px "Envy Code R for Powerline";
   }
 
   #formattedJson {
-    color: #444 ;
+    color: #c3c0b9;
   }
   .b /* Bracket/brace */ {
-    font-weight: bold ;
+    color: #eaf2ac;
+    opacity: 0.60;
   }
   .s {
-    color: #0B7500 ;
+    color: #67caf1;
     word-wrap: break-word; 
   }
   a:link, a:visited {
     text-decoration: none ;
-    color: inherit ;
+    color: #bed7a3;
   }
   a:hover, a:active {
     text-decoration: underline ;
-    color: #050 ;
+    color: #d8f1bc;
   }
-  .bl, .nl, .n { /* bool, null, number */
-    font-weight: bold ;
-    color: #1A01CC ;
+  .bl, {
+    color: #c999c9;
+  }
+  .n {
+    color: #fecb6e;
+  }
+  .nl {
+    color: #fb8d8e;
   }
   .k { /* key */
-    color: black ;
+    color: #d3d0c8;
   }
 
 #formattingMsg {
